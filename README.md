@@ -44,7 +44,9 @@ Do it in there. Just make sure it's executable.
 Want to notify IRC or email on test pass or failure? Joe will run
 `.git/hooks/build-failed` or `.git/hooks/build-worked` if they exist
 and are executable on build pass / fail. They're just shell scripts -
-put whatever you want in there.
+put whatever you want in there. [These evironment variables](https://github.com/defunkt/cijoe/blob/master/lib/cijoe.rb#L183)
+ are made 
+available.
 
 Tip: your repo's `HEAD` will point to the commit used to run the
 build. Pull any metadata you want out of that scro.
